@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{19001DFE-E71C-413A-A38A-AD7E0C43B672}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagedUI</RootNamespace>
+    <AssemblyName>ManagedUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\_Builds\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>bin\Debug\ManagedUI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\_Builds\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <DocumentationFile>..\_Builds\ManagedUI.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugX86|AnyCPU'">
+    <OutputPath>bin\DebugX86\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\_Builds\ReleaseX86\</OutputPath>
+    <DocumentationFile>..\_Builds\ReleaseX86\ManagedUI.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'DebugX86|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\_Builds\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <HintPath>..\packages\SlimDX.4.0.13.44\lib\NET40\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AHDApplicationInfo.cs" />
+    <Compile Include="Attributes\CBMIInfo.cs" />
+    <Compile Include="Attributes\CMIInfoAttribute.cs" />
+    <Compile Include="Attributes\CommandCombinationAttribute.cs" />
+    <Compile Include="Attributes\CommandInfoAttribute.cs" />
+    <Compile Include="Attributes\EnterNameFormOkPressedArgs.cs" />
+    <Compile Include="Attributes\MIRInfoAttribute.cs" />
+    <Compile Include="Attributes\MIRNoResourcePropertiesAttribute.cs" />
+    <Compile Include="Attributes\MIRResourcesInfoAttribute.cs" />
+    <Compile Include="Attributes\ServiceInfoAttribute.cs" />
+    <Compile Include="Attributes\SettingsControlNoResourceInfo.cs" />
+    <Compile Include="Attributes\ShortcutAttribute.cs" />
+    <Compile Include="Attributes\SettingsControlResourceInfo.cs" />
+    <Compile Include="Attributes\SurpressHotKeysAttribute.cs" />
+    <Compile Include="Commands\General\ShowCommands.cs" />
+    <Compile Include="Commands\General\ShowConsole.cs" />
+    <Compile Include="Commands\General\ShowServices.cs" />
+    <Compile Include="Commands\Services\ServiceBlacklist.cs" />
+    <Compile Include="Commands\Services\ServiceBlacklistList.cs" />
+    <Compile Include="Commands\Services\ServiceBlacklistRemove.cs" />
+    <Compile Include="Commands\Services\ServicesList.cs" />
+    <Compile Include="Commands\Settings\ShowSettings.cs" />
+    <Compile Include="Commands\Shortcuts\LoadShortcutCommand.cs" />
+    <Compile Include="Commands\TabControls\LoadLayout.cs" />
+    <Compile Include="Commands\TabControls\SaveLayout.cs" />
+    <Compile Include="Commands\TBR and MIR\ShowThemeEditor.cs" />
+    <Compile Include="Commands\Themes\LoadThemeCommand.cs" />
+    <Compile Include="Configurations\GUIConfiguration.cs" />
+    <Compile Include="Controls\DefaultSettingControls\SCHotkeys.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DefaultSettingControls\SCMenuItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DefaultSettingControls\SCTheme.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventArgs\ApplicationExittingArgs.cs" />
+    <Compile Include="EventArgs\ProgressEventArgs.cs" />
+    <Compile Include="EventArgs\TabControlDroppedArgs.cs" />
+    <Compile Include="Commands\TabControls\ToggleTabControlVisible.cs" />
+    <Compile Include="Controls\ManagedTabControl\Args\MTCDragRequestEventArgs.cs" />
+    <Compile Include="EventArgs\TabControlAddedArgs.cs" />
+    <Compile Include="Attributes\ControlInfo.cs" />
+    <Compile Include="Attributes\TabControlNoResourceInfoAttribute.cs" />
+    <Compile Include="Attributes\TabControlResourceInfo.cs" />
+    <Compile Include="Commands\General\Exit.cs" />
+    <Compile Include="Commands\General\SetLanguage.cs" />
+    <Compile Include="Commands\TBR and MIR\SetTBRVisible.cs" />
+    <Compile Include="Commands\General\ShowHelp.cs" />
+    <Compile Include="Commands\TBR and MIR\ShowMenuItemsMapEditor.cs" />
+    <Compile Include="Commands\TBR and MIR\ShowShortcutsEditor.cs" />
+    <Compile Include="Commands\TBR and MIR\ShowToolbarsEditor.cs" />
+    <Compile Include="Enums\MIRType.cs" />
+    <Compile Include="Enums\ShortcutMode.cs" />
+    <Compile Include="Enums\StatusMode.cs" />
+    <Compile Include="Enums\TBRLocation.cs" />
+    <Compile Include="EventArgs\ChangeIndexArgs.cs" />
+    <Compile Include="EventArgs\KeyPressedArgs.cs" />
+    <Compile Include="EventArgs\StatusChangedArgs.cs" />
+    <Compile Include="EventArgs\TCCTabControlClosedArgs.cs" />
+    <Compile Include="Forms\FormServicesBrowser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormServicesBrowser.Designer.cs">
+      <DependentUpon>FormServicesBrowser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsole.Designer.cs">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSettings.Designer.cs">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Debug\FormDebugAddTabControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Debug\FormDebugAddTabControls.Designer.cs">
+      <DependentUpon>FormDebugAddTabControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormEnterName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEnterName.designer.cs">
+      <DependentUpon>FormEnterName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shortcuts\FormChangeKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shortcuts\FormChangeKey.designer.cs">
+      <DependentUpon>FormChangeKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Shortcuts\FormEditShortcuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Shortcuts\FormEditShortcuts.Designer.cs">
+      <DependentUpon>FormEditShortcuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormStartup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormStartup.designer.cs">
+      <DependentUpon>FormStartup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuItems\FormAddMIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuItems\FormAddMIR.Designer.cs">
+      <DependentUpon>FormAddMIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MenuItems\FormEditMenuItemsMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MenuItems\FormEditMenuItemsMap.Designer.cs">
+      <DependentUpon>FormEditMenuItemsMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Toolbars\FormEditToolBars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Toolbars\FormEditToolBars.Designer.cs">
+      <DependentUpon>FormEditToolBars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Theme\FormThemeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Theme\FormThemeEditor.Designer.cs">
+      <DependentUpon>FormThemeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Controls\IControlInfo.cs" />
+    <Compile Include="Interfaces\Controls\MUIUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\MIR\CBMI.cs" />
+    <Compile Include="Interfaces\MIR\TMI.cs" />
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControlDragPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControlDragPanel.Designer.cs">
+      <DependentUpon>ManagedTabControlDragPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Controls\ISettingsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagedMessageBox\Forms\FormManagedMesssageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagedMessageBox\Forms\FormManagedMesssageBox.designer.cs">
+      <DependentUpon>FormManagedMesssageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagedMessageBox\ManagedMessageBox.cs" />
+    <Compile Include="ManagedMessageBox\ManagedMessageBoxCustom.cs" />
+    <Compile Include="ManagedMessageBox\ManagedMessageBoxErrorMessage.cs" />
+    <Compile Include="ManagedMessageBox\ManagedMessageBoxInfoMessage.cs" />
+    <Compile Include="ManagedMessageBox\ManagedMessageBoxQuestionMessage.cs" />
+    <Compile Include="ManagedMessageBox\ManagedMessageBoxWarningMessage.cs" />
+    <Compile Include="ManagedMessageBox\Types\ManagedMessageBoxButtons.cs" />
+    <Compile Include="ManagedMessageBox\Types\ManagedMessageBoxIcon.cs" />
+    <Compile Include="ManagedMessageBox\Types\ManagedMessageBoxResult.cs" />
+    <Compile Include="MenuItems\Default CBMIs\BlankCBMI.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_EditShortcuts.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_EditTheme.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_LoadLayout.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_LoadTheme.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_SaveLayout.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_ShowConsole.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_ShowServices.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_ShowSettings.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Layouts.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Shortcuts.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Tabs.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Themes.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Toolbars.cs" />
+    <Compile Include="MenuItems\Default TMIs\BlankTMI.cs" />
+    <Compile Include="Controls\ManagedTabControl\Args\MTCTabPageCloseArgs.cs" />
+    <Compile Include="Controls\ManagedTabControl\Args\MTCTabPageDragArgs.cs" />
+    <Compile Include="Controls\ManagedTabControl\Args\MTCTabPageShowToolTipArgs.cs" />
+    <Compile Include="Controls\ManagedTabControl\Collections\ManagedControlsSpliterPanelsCollection.cs" />
+    <Compile Include="Controls\ManagedTabControl\Collections\MTCTabPagesCollection.cs" />
+    <Compile Include="Controls\ManagedTabControl\ManagedControlsSpliter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedControlsSpliter.Designer.cs">
+      <DependentUpon>ManagedControlsSpliter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControl.Designer.cs">
+      <DependentUpon>ManagedTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControlPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\ManagedTabControlPanel.Designer.cs">
+      <DependentUpon>ManagedTabControlPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ManagedTabControl\Types\ManagedControlsSpliterAlignment.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\ManagedControlsSpliterBufferItem.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\ManagedControlsSpliterPanel.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\MTCDrawPageObjects.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\MTCDrawStyle.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\MTCTabPage.cs" />
+    <Compile Include="Controls\ManagedTabControl\Types\MTCTabPageDrawType.cs" />
+    <Compile Include="Configurations\MUIParameters.cs" />
+    <Compile Include="Properties\Resources.ar.Designer.cs">
+      <DependentUpon>Resources.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\GUIService.cs" />
+    <Compile Include="Interfaces\MIR\CMI.cs" />
+    <Compile Include="Interfaces\MIR\DMI.cs" />
+    <Compile Include="Interfaces\Commands\ICommand.cs" />
+    <Compile Include="Interfaces\Commands\ICommandCombination.cs" />
+    <Compile Include="Interfaces\Commands\ICommandCombinationInfo.cs" />
+    <Compile Include="Interfaces\Commands\ICommandInfo.cs" />
+    <Compile Include="Interfaces\MIR\IMenuItemRepresentator.cs" />
+    <Compile Include="Interfaces\MIR\IMenuItemRepresentatorInfo.cs" />
+    <Compile Include="Interfaces\Services\IService.cs" />
+    <Compile Include="Interfaces\Services\IServiceInfo.cs" />
+    <Compile Include="Interfaces\Controls\ITabControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Interfaces\MIR\PMI.cs" />
+    <Compile Include="Interfaces\MIR\RMI.cs" />
+    <Compile Include="Interfaces\MIR\SMI.cs" />
+    <Compile Include="Localization\LocalizationManager.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_EditMenuItems.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_EditToolbars.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_Exit.cs" />
+    <Compile Include="MenuItems\Default CMIs\CMI_Help.cs" />
+    <Compile Include="MenuItems\Default DMIs\DMI_Language.cs" />
+    <Compile Include="MenuItems\DefaultRMIS.cs" />
+    <Compile Include="MenuItems\DMIChild.cs" />
+    <Compile Include="MenuItems\MenuItemsMap.cs" />
+    <Compile Include="MenuItems\MenuItemsMapElement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CommandsManager.cs" />
+    <Compile Include="Shortcuts\ShortCut.cs" />
+    <Compile Include="Shortcuts\ShortcutsMap.cs" />
+    <Compile Include="MUI.cs" />
+    <Compile Include="Shortcuts\ShortcutsWinHandler.cs" />
+    <Compile Include="TabControls\TabControlContainer.cs" />
+    <Compile Include="Controls\DefaultTabControls\TabControlLogs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Themes\Theme.cs" />
+    <Compile Include="Themes\ThemeRenderer.cs" />
+    <Compile Include="ToolBars\TBR.cs" />
+    <Compile Include="ToolBars\TBRMap.cs" />
+    <Compile Include="TraceListeners\TraceListenerConsoleForm.cs" />
+    <Compile Include="TraceListeners\TraceListenerStartupForm.cs" />
+    <Compile Include="TraceListeners\TraceListenerMainForm.cs" />
+    <Compile Include="TraceListeners\TraceListenerLogsTabControl.cs" />
+    <Compile Include="Utilities.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DefaultSettingControls\SCHotkeys.resx">
+      <DependentUpon>SCHotkeys.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DefaultSettingControls\SCMenuItems.resx">
+      <DependentUpon>SCMenuItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DefaultSettingControls\SCTheme.resx">
+      <DependentUpon>SCTheme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConsole.resx">
+      <DependentUpon>FormConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormServicesBrowser.resx">
+      <DependentUpon>FormServicesBrowser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSettings.resx">
+      <DependentUpon>FormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Debug\FormDebugAddTabControls.resx">
+      <DependentUpon>FormDebugAddTabControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormEnterName.resx">
+      <DependentUpon>FormEnterName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shortcuts\FormChangeKey.resx">
+      <DependentUpon>FormChangeKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Shortcuts\FormEditShortcuts.resx">
+      <DependentUpon>FormEditShortcuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormStartup.resx">
+      <DependentUpon>FormStartup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuItems\FormAddMIR.resx">
+      <DependentUpon>FormAddMIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MenuItems\FormEditMenuItemsMap.resx">
+      <DependentUpon>FormEditMenuItemsMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Theme\FormThemeEditor.resx">
+      <DependentUpon>FormThemeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Toolbars\FormEditToolBars.resx">
+      <DependentUpon>FormEditToolBars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ManagedTabControl\ManagedControlsSpliter.resx">
+      <DependentUpon>ManagedControlsSpliter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ManagedTabControl\ManagedTabControl.resx">
+      <DependentUpon>ManagedTabControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagedMessageBox\Forms\FormManagedMesssageBox.resx">
+      <DependentUpon>FormManagedMesssageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.ar.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.ar.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DefaultTabControls\TabControlLogs.resx">
+      <DependentUpon>TabControlLogs.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\cross_black.png" />
+    <None Include="Resources\bullet_black.png" />
+    <None Include="Resources\bullet_white.png" />
+    <None Include="Resources\3830-12566.png" />
+    <None Include="Resources\danger_cameleonhelp_divers.png" />
+    <None Include="Resources\book_open.png" />
+    <None Include="Resources\application_side_tree.png" />
+    <None Include="Resources\application_view_tile.png" />
+    <None Include="Resources\application.png" />
+    <Content Include="Commands\Commands.txt" />
+    <Content Include="Debugging.txt" />
+    <Content Include="Resources\door_in.png" />
+    <None Include="Resources\erreur_cameleonhelp_divers.png" />
+    <Content Include="Resources\help.png" />
+    <None Include="Resources\wrench.png" />
+    <None Include="Resources\information_cameleonhelp_divers.png" />
+    <None Include="Resources\MessageIcon_Info.png" />
+    <None Include="Resources\stop_designaxl_suite.png" />
+    <None Include="Resources\keyboard.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

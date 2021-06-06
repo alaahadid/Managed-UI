@@ -1,0 +1,23 @@
+﻿
+Important notes about debugging:
+--------------------------------
+. Trace is used for debugging. To make trace messages printed to user in forms, you need to use these key words in the ManagedUI.StatusMode.
+
+Example:
+// This is a normal trace/console message, it is not visible to user:
+Trace.WriteLine("Some message.");
+// Another normal trace/console message that it is not visible to user.
+Trace.WriteLine("Some message.", "some category");
+
+// This is a message that will be visible to user in main form status bar, startup form (splash), console and logs tab:
+Trace.WriteLine("Some message.", StatusMode.Normal);
+// Same above, but this one is visible as error 
+Trace.WriteLine("Some message.", StatusMode.Error);
+// Warning visible message 
+Trace.WriteLine("Some message.", StatusMode.Warnings);
+// Information visible message 
+Trace.WriteLine("Some message.", StatusMode.Information);
+
+
+All messages are treated as Trace messages, that means it is handled as normal trace message except the category is one of ManagedUI.StatusMode.
+Using category, the forms and control decides how it should be visible to user (i.e. message color).

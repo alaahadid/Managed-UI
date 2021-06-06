@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CMI_Name_EditMenuItems" xml:space="preserve">
+    <value>تحرير ال&amp;قائمة</value>
+    <comment>Edit &amp;Menu</comment>
+  </data>
+  <data name="CMI_Name_EditShortcuts" xml:space="preserve">
+    <value>تحرير الا&amp;ختصارات</value>
+    <comment>Edit shortcuts (hotkeys)</comment>
+  </data>
+  <data name="CMI_Name_EditToolbars" xml:space="preserve">
+    <value>تحرير &amp;شرائط الأدوات</value>
+    <comment>Edit &amp;Toolbars</comment>
+  </data>
+  <data name="CMI_Name_Exit" xml:space="preserve">
+    <value>&amp;خروج</value>
+    <comment>&amp;Exit</comment>
+  </data>
+  <data name="CMI_Name_Help" xml:space="preserve">
+    <value>عرض ال&amp;تعليمات</value>
+    <comment>Show &amp;Help</comment>
+  </data>
+  <data name="CMI_Tooltip_EditMenuItems" xml:space="preserve">
+    <value>تحرير القائمة, هذا يخولك تحرير القائمة الأساسية للبرنامج</value>
+    <comment>Edit menu items map, this allows to customize the menu items of the application.</comment>
+  </data>
+  <data name="CMI_Tooltip_EditShortcuts" xml:space="preserve">
+    <value>تحرير مفاتيح الاختصارات للقوائم و الاوامر في البرنامج</value>
+    <comment>Edit shortcuts and hotkeys for the menu items and the commands of the application</comment>
+  </data>
+  <data name="CMI_Tooltip_EditToolbars" xml:space="preserve">
+    <value>تحرير شرائط الأدوات و الأزرار و القوائم التي فيها</value>
+    <comment>Edit the toolbars, this allows to customize toolbars and buttons in the toolbars.</comment>
+  </data>
+  <data name="CMI_Tooltip_Exit" xml:space="preserve">
+    <value>إغلاق التطبيق</value>
+    <comment>Exit the application</comment>
+  </data>
+  <data name="CMI_Tooltip_Help" xml:space="preserve">
+    <value>فتح التعليمات حول استخدام البرنامج</value>
+    <comment>Show help about using the applciation.</comment>
+  </data>
+  <data name="DMI_Name_Language" xml:space="preserve">
+    <value>ال&amp;لغة</value>
+    <comment>&amp;Language</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Icon_Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door_in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Label_Version" xml:space="preserve">
+    <value>النسخة</value>
+    <comment>Version</comment>
+  </data>
+  <data name="Message_EnteredHotkeyIsAlreadTaken" xml:space="preserve">
+    <value>المفتاح المدخل موجود سابقا و مستخدم في قائمة اخرى او امر آخر</value>
+    <comment>Entered shortcut (hotkey) is already taken by other menu item or command.</comment>
+  </data>
+  <data name="MIR_Name_Edit" xml:space="preserve">
+    <value>&amp;تحرير</value>
+    <comment>&amp;Edit</comment>
+  </data>
+  <data name="MIR_Name_File" xml:space="preserve">
+    <value>&amp;ملف</value>
+    <comment>&amp;File</comment>
+  </data>
+  <data name="MIR_Name_Help" xml:space="preserve">
+    <value>&amp;تعليمات</value>
+    <comment>&amp;Help</comment>
+  </data>
+  <data name="MIR_Name_Tools" xml:space="preserve">
+    <value>الأ&amp;دوات</value>
+    <comment>&amp;Tools</comment>
+  </data>
+  <data name="MIR_Name_View" xml:space="preserve">
+    <value>ال&amp;عرض</value>
+    <comment>&amp;View</comment>
+  </data>
+  <data name="Status_AllServicesClosed" xml:space="preserve">
+    <value>تم اغلاق كافة الخدمات بنجاح</value>
+    <comment>All service(s) closed.</comment>
+  </data>
+  <data name="Status_ClosingServices" xml:space="preserve">
+    <value>جاري اغلاق الخدمات ...</value>
+    <comment>Closing services ...</comment>
+  </data>
+  <data name="Status_CoreIsInitialized" xml:space="preserve">
+    <value>تم تشغيل القاعدة بنجاح</value>
+    <comment>The core is initialized successfully.</comment>
+  </data>
+  <data name="Status_InitializingTheCore" xml:space="preserve">
+    <value>جاري تشغيل القاعدة</value>
+    <comment>Initializing the core ...</comment>
+  </data>
+  <data name="Status_LanguageInterfaceFound" xml:space="preserve">
+    <value>لغة عرض تم ايجادها</value>
+    <comment>language interface found.</comment>
+  </data>
+  <data name="Status_LanguageInterfaceSetTo" xml:space="preserve">
+    <value>تم تحديد لغة العرض الى</value>
+    <comment>Language interface set to</comment>
+  </data>
+  <data name="Status_LoadingLanguageInterfeces" xml:space="preserve">
+    <value>جاري تحميل لغات العرض</value>
+    <comment>Loading language interfeces ...</comment>
+  </data>
+  <data name="Status_LoadingServices" xml:space="preserve">
+    <value>جاري تحميل الخدمات</value>
+    <comment>Loading services ....</comment>
+  </data>
+  <data name="Status_LoadingSettings" xml:space="preserve">
+    <value>جاري تحميل الاعدادات</value>
+    <comment>Loading settings ...</comment>
+  </data>
+  <data name="Status_LoadingTheMainWindow" xml:space="preserve">
+    <value>جاري تحميل النافذة الأساسية</value>
+    <comment>Loading the main window ...</comment>
+  </data>
+  <data name="Status_MainWindowLoadedSuccessfully" xml:space="preserve">
+    <value>تم تحميل النافذة الأساسية بنجاح</value>
+    <comment>Main window loaded successfully.</comment>
+  </data>
+  <data name="Status_NoLanguageInterfaceFound" xml:space="preserve">
+    <value>لم يتم تحديد اية لغة عرض, تم تحديد اللغة الافاتراضية 'en-US'</value>
+    <comment>No language interface found. Using default interface 'en-US'</comment>
+  </data>
+  <data name="Status_Ready" xml:space="preserve">
+    <value>جاهز</value>
+    <comment>Ready !</comment>
+  </data>
+  <data name="Status_SavingSettings" xml:space="preserve">
+    <value>جاري حفظ الاعدادات</value>
+    <comment>Saving the settings .....</comment>
+  </data>
+  <data name="Status_ServiceFound" xml:space="preserve">
+    <value>خدمة وجدت</value>
+    <comment>Service found</comment>
+  </data>
+  <data name="Status_SettingLanguageInterface" xml:space="preserve">
+    <value>جاري تحديد لغة العرض</value>
+    <comment>Setting language interface ....</comment>
+  </data>
+  <data name="Status_SettingsLoadedSuccessfully" xml:space="preserve">
+    <value>تم تحميل الاعدادات بنجاح</value>
+    <comment>Settings loaded successfully.</comment>
+  </data>
+  <data name="Status_SettingsSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ الاعدادات بنجاح</value>
+    <comment>Settings saved successfully.</comment>
+  </data>
+  <data name="Status_TotalOf" xml:space="preserve">
+    <value>إجمالي من</value>
+    <comment>Total of</comment>
+  </data>
+  <data name="FilterName_MenuItemsMapFile" xml:space="preserve">
+    <value>ملف القائمة الأساسية</value>
+    <comment>Menu Items Map file</comment>
+  </data>
+  <data name="FilterName_ShortcutsMapFile" xml:space="preserve">
+    <value>ملف اختصارات</value>
+    <comment>Shortcuts Map file</comment>
+  </data>
+  <data name="FilterName_ToolbarsMapFile" xml:space="preserve">
+    <value>ملف شرائط الأدوات</value>
+    <comment>Toolbars Map file</comment>
+  </data>
+  <data name="Message_MenuItemsMapSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ القائمة بنجاح</value>
+    <comment>Menu Items Map saved successfully.</comment>
+  </data>
+  <data name="Message_PleaseSelectAnItemFirst" xml:space="preserve">
+    <value>الرجاء اختيار عنصر اولا</value>
+    <comment>Please select an item first !!</comment>
+  </data>
+  <data name="Message_ShortcutsMapSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ ملف الشرائط بنجاح</value>
+    <comment>Shortcuts Map saved successfully.</comment>
+  </data>
+  <data name="Message_SplitterCannotHaveSubitems" xml:space="preserve">
+    <value>المقسم لا يمكنه ان يحوي عناصر</value>
+    <comment>Splitter cannot have subitems.</comment>
+  </data>
+  <data name="Message_ThereIsNoMenuItemToSave" xml:space="preserve">
+    <value>لا يوجد عناصر في القائمة لحفظها</value>
+    <comment>There is no menu item to save !!</comment>
+  </data>
+  <data name="Message_ToolbarsMapSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ ملف الشرائط بنجاح</value>
+    <comment>Toolbars Map saved successfully.</comment>
+  </data>
+  <data name="Message_UnableToLoadCurrentMIRFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف القائمة الحالي</value>
+    <comment>Unable to load the current menu items map file !!</comment>
+  </data>
+  <data name="Message_UnableToLoadCurrentShrtMapFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف الاختصارات الحالي</value>
+    <comment>Unable to load the current shortcuts map file !!</comment>
+  </data>
+  <data name="Message_UnableToLoadMIRFileAt" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف القائمة من</value>
+    <comment>Unable to load the menu items map file at</comment>
+  </data>
+  <data name="Message_UnableToLoadTheCurrentTBRFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف الشرائط</value>
+    <comment>Unable to load the current toolbars map file !!</comment>
+  </data>
+  <data name="Message_UnableToLoadTheShortcutsMapFileAt" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف الاختصارات من</value>
+    <comment>Unable to load the shortcuts map file at</comment>
+  </data>
+  <data name="Message_UnableToLoadTheTBRMapFileAt" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف الشرائط من</value>
+    <comment>Unable to load the toolbars map file at</comment>
+  </data>
+  <data name="Message_UnableToSaveTheMapFile" xml:space="preserve">
+    <value>لم يتمكن من حفظ الملف</value>
+    <comment>Unable to save the map file !!</comment>
+  </data>
+  <data name="Status_ApplyingMenuItemsMapToTheMainWindow" xml:space="preserve">
+    <value>يتم تفعيل القائمة الأساسية في النافذة الأساسية</value>
+    <comment>Applying menu items map to the main window</comment>
+  </data>
+  <data name="Status_ApplyingToolbarsMapToTheMainWindow" xml:space="preserve">
+    <value>يتم تفعيل الشرائط في النافذة الاساسية</value>
+    <comment>Applying toolbars map to the main window</comment>
+  </data>
+  <data name="Status_ErrorAdding" xml:space="preserve">
+    <value>خطأ في إضافة</value>
+    <comment>Error adding</comment>
+  </data>
+  <data name="Status_InvalidParameter" xml:space="preserve">
+    <value>بارامتر غير صحيح</value>
+    <comment>invalid parameter !!</comment>
+  </data>
+  <data name="Status_LanguageIdIsNotExist" xml:space="preserve">
+    <value>معرف اللغة غير موجود او مدعوم</value>
+    <comment>language id is not exist</comment>
+  </data>
+  <data name="Status_MIEError4" xml:space="preserve">
+    <value>خطأ: فشل في تحميل نص الشرح باستخدام المفتاح</value>
+    <comment>ERROR !! Unable to load tooltip from resources using key</comment>
+  </data>
+  <data name="Status_MIRError1" xml:space="preserve">
+    <value>خطأ: محاولة تحميل قائمة على مقسم في القائمة</value>
+    <comment>ERROR: attempting to add children to smi in the menu items map!</comment>
+  </data>
+  <data name="Status_MIRError2" xml:space="preserve">
+    <value>خطأ: محاولة اضافة عنصر أساسي في عنصر ليس باساسي</value>
+    <comment>ERROR: attempting to include root menu item in place that not root.</comment>
+  </data>
+  <data name="Status_MIRError3" xml:space="preserve">
+    <value>خطأ: محاولة وضع عنصر القائمة كأمر و لكنه ليس بأمر !</value>
+    <comment>Error adding element of CMI: the element of the menu map is set as CMI but the menu item representator is not a CMI !!</comment>
+  </data>
+  <data name="Status_NoMenuItemsMapLoadedtheGUICore" xml:space="preserve">
+    <value>لم يتم تحميل اية قائمة في قاعدة العرض</value>
+    <comment>No menu items map loaded in the GUI Core !!</comment>
+  </data>
+  <data name="Status_NoParamPassed" xml:space="preserve">
+    <value>لم يتم تمرير اية بارامتر</value>
+    <comment>no parameter passed !</comment>
+  </data>
+  <data name="Status_NoToolbarsMapLoadedInTheGUICore" xml:space="preserve">
+    <value>لم يتم تحميل اية ملف للشرائط في القاعدة</value>
+    <comment>No toolbars map loaded in the GUI Core !!</comment>
+  </data>
+  <data name="Status_TBRError1" xml:space="preserve">
+    <value>خطأ: محاولة وضع قائمة ديناميكة أو اساسية في شريط</value>
+    <comment>TBR ERROR: Attembting to add DMI/RMI into a toolbar. Error in map.</comment>
+  </data>
+  <data name="Status_UnableToExecuteCommand" xml:space="preserve">
+    <value>لا يمكن تنفيذ الأمر</value>
+    <comment>Unable to execute the command</comment>
+  </data>
+  <data name="Title_MIREditor" xml:space="preserve">
+    <value>محرر القائمة الأساسية</value>
+    <comment>Menu Items Map Editor</comment>
+  </data>
+  <data name="Title_OpenMenuItemsMapFile" xml:space="preserve">
+    <value>قتح ملف القائمة الأساسية</value>
+    <comment>Open Menu Items Map file</comment>
+  </data>
+  <data name="Title_OpenShortcutsMapFile" xml:space="preserve">
+    <value>فتح ملف الاختصارات</value>
+    <comment>Open Shortcuts Map file</comment>
+  </data>
+  <data name="Title_OpenToolbarsMapFile" xml:space="preserve">
+    <value>فتح ملف الشرائط</value>
+    <comment>Open Toolbars Map file</comment>
+  </data>
+  <data name="Title_SaveMenuItemsMapFile" xml:space="preserve">
+    <value>حفظ ملف القائمة الأساسية</value>
+    <comment>Save Menu Items Map file</comment>
+  </data>
+  <data name="Title_SaveShortcutsMapFile" xml:space="preserve">
+    <value>حفظ ملف الاختصارات</value>
+    <comment>Save Shortcuts Map file</comment>
+  </data>
+  <data name="Title_SaveToolbarsMapFile" xml:space="preserve">
+    <value>حفظ الشرائط في ملف</value>
+    <comment>Save Toolbars Map file</comment>
+  </data>
+  <data name="Title_ShortcutsMapEditor" xml:space="preserve">
+    <value>محرر مفاتيح الاختصارات</value>
+    <comment>Shortcuts (Hotkeys) Map Editor</comment>
+  </data>
+  <data name="Title_ToolbarsMapEditor" xml:space="preserve">
+    <value>محرر الشرائط</value>
+    <comment>Toolbars Map Editor</comment>
+  </data>
+  <data name="Word_Command" xml:space="preserve">
+    <value>امر</value>
+    <comment>Command</comment>
+  </data>
+  <data name="Word_MenuItem" xml:space="preserve">
+    <value>عنصر قائمة</value>
+    <comment>Menu item</comment>
+  </data>
+  <data name="Word_NewToolsbar" xml:space="preserve">
+    <value>شريط جديد</value>
+    <comment>New Toolsbar</comment>
+  </data>
+  <data name="Word_No" xml:space="preserve">
+    <value>لا</value>
+    <comment>No</comment>
+  </data>
+  <data name="Word_Yes" xml:space="preserve">
+    <value>نعم</value>
+    <comment>Yes</comment>
+  </data>
+  <data name="Word_Splitter" xml:space="preserve">
+    <value>مقسم</value>
+    <comment>Splitter</comment>
+  </data>
+  <data name="Status_AttembtingToExecuteAnEmptyShortcut" xml:space="preserve">
+    <value>محاولة تشغيل اختصار خالي</value>
+    <comment>Attembting to execute an empty shortcut.</comment>
+  </data>
+  <data name="Status_FileIsDamagedOrNotAShrt" xml:space="preserve">
+    <value>هذا الملف متضرر أو ليس بملف قائمة</value>
+    <comment>The file is damaged or not shortcuts map file</comment>
+  </data>
+  <data name="Status_fileIsNotExistAt" xml:space="preserve">
+    <value>الملف غير موجود في</value>
+    <comment>file is not exist at</comment>
+  </data>
+  <data name="Status_GUI1" xml:space="preserve">
+    <value>تم استعادة القائمة الأساسية الى الافتراضية</value>
+    <comment>Menu items map set to default !!</comment>
+  </data>
+  <data name="Status_GUI2" xml:space="preserve">
+    <value>تم استعادة الشرائط الى الافتراضية</value>
+    <comment>Toolbars map set to default !!</comment>
+  </data>
+  <data name="Status_GUI3" xml:space="preserve">
+    <value>تم استعادة الاختصارات الى الافتراضية</value>
+    <comment>Shortcuts map set to default !</comment>
+  </data>
+  <data name="Status_LoadingMenuItemsMapAt" xml:space="preserve">
+    <value>جاري تحميل القائمة الأساسية من</value>
+    <comment>Loading menu items map at</comment>
+  </data>
+  <data name="Status_LoadingShortcutsMapAt" xml:space="preserve">
+    <value>جاري تحميل الاختصارات من</value>
+    <comment>Loading shortcuts map at</comment>
+  </data>
+  <data name="Status_LoadingTBRMapFile" xml:space="preserve">
+    <value>جاري تحميل الشرائط من</value>
+    <comment>Loading toolbar representators map at</comment>
+  </data>
+  <data name="Status_MenuItemsMapLoadedSuccessfullyFromPath" xml:space="preserve">
+    <value>تم تحميل القائمة الأساسية من الملف بنجاح</value>
+    <comment>Menu items map loaded successfully from path</comment>
+  </data>
+  <data name="Status_MenuItemsMapSavedSuccessfullyAtPath" xml:space="preserve">
+    <value>تم حفظ القائمة الأساسية بنجاح في الملف</value>
+    <comment>Menu items map saved successfully at path</comment>
+  </data>
+  <data name="Status_SavingMenuItemsMapAtPath" xml:space="preserve">
+    <value>جاري حفظ القائمة الأساسية في</value>
+    <comment>Saving menu items map at path</comment>
+  </data>
+  <data name="Status_SavingShortcutsMap" xml:space="preserve">
+    <value>جاري حفظ الاختصارات</value>
+    <comment>Saving shortcuts map</comment>
+  </data>
+  <data name="Status_SavingTBRAt" xml:space="preserve">
+    <value>جاري حفظ ملف القائمة في</value>
+    <comment>Saving toolbar representators map at path</comment>
+  </data>
+  <data name="Status_ShortcutsMapFileLoadedSuccessfullyFromPath" xml:space="preserve">
+    <value>تم تحميل ملف الاختصارات بنجاح من</value>
+    <comment>Shortcuts map file loaded successfully from path</comment>
+  </data>
+  <data name="Status_ShortcutsMapSavedSuccessfully" xml:space="preserve">
+    <value>تم حفظ ملف الاختصارات بنجاح</value>
+    <comment>Shortcuts map saved successfully</comment>
+  </data>
+  <data name="Status_TBRLoadedSuccessAt" xml:space="preserve">
+    <value>تم تحميل ملف الشرائط بنجاح من</value>
+    <comment>Toolbar representators map loaded successfully from path</comment>
+  </data>
+  <data name="Status_TBRSavedAt" xml:space="preserve">
+    <value>تم حفظ ملف الشرائط بنجاح في</value>
+    <comment>Toolbar representators map saved successfully at path</comment>
+  </data>
+  <data name="Status_TheCommandCannotBeFound" xml:space="preserve">
+    <value>لم يتم ايجاد الأمر</value>
+    <comment>The command cannot be found</comment>
+  </data>
+  <data name="Status_TheFileIsDamagedOrNotMIR" xml:space="preserve">
+    <value>الملف متضرر أو ليس بملف قائمة أساسي</value>
+    <comment>The file is damaged or not menu items map file.</comment>
+  </data>
+  <data name="Status_UnableToLoadMIRMap" xml:space="preserve">
+    <value>لم يتمكن من تحميل القائمة الأساسية</value>
+    <comment>Unable to load the menu items map</comment>
+  </data>
+  <data name="Status_UnableToLoadTBRMapFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل الشرائط</value>
+    <comment>Unable to load the toolbar representators map</comment>
+  </data>
+  <data name="Status_UnableToLoadTheMapFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل الخارطة</value>
+    <comment>Unable to load the map file</comment>
+  </data>
+  <data name="Status_UnableToLoadTheShortcutsMap" xml:space="preserve">
+    <value>لم يتمكن من تحميل مفاتيح الاختصارات</value>
+    <comment>Unable to load the shortcuts map</comment>
+  </data>
+  <data name="Status_UnableToSaveTheMapFile" xml:space="preserve">
+    <value>لم يتمكن من حفظ ملف الخارطة</value>
+    <comment>Unable to save the map file</comment>
+  </data>
+  <data name="DMI_Name_Toolbars" xml:space="preserve">
+    <value>ال&amp;شرائط الأدوات</value>
+    <comment>&amp;Toolbars</comment>
+  </data>
+  <data name="Status_TBRCannotBeFound" xml:space="preserve">
+    <value>الشريط غير موجود</value>
+    <comment>toolbar is not exist</comment>
+  </data>
+  <data name="Word_Main" xml:space="preserve">
+    <value>اساسي</value>
+    <comment>Main</comment>
+  </data>
+  <data name="TMI_Name_BlankTMI" xml:space="preserve">
+    <value>حقل خالي</value>
+    <comment>Blank Textbox</comment>
+  </data>
+  <data name="TMI_Tooltip_BlankTMI" xml:space="preserve">
+    <value>هذا الحق للتجريب</value>
+    <comment>This is a blank textbox for testing purpose</comment>
+  </data>
+  <data name="CBMI_Name_Blank" xml:space="preserve">
+    <value>قائمة منسدلة خالية</value>
+    <comment>Blank Combobox</comment>
+  </data>
+  <data name="CBMI_Tooltip_Blank" xml:space="preserve">
+    <value>قائمة منسدلة للتجريب</value>
+    <comment>Blank Combobox for testing purpose</comment>
+  </data>
+  <data name="Status_MIRMapApplyed" xml:space="preserve">
+    <value>تم تفعيل القائمة الأساسية بنجاح</value>
+    <comment>Menu items map applyed successfully.</comment>
+  </data>
+  <data name="Status_TBRMapApplyed" xml:space="preserve">
+    <value>تم حفظ ملف الشرائط بنجاح </value>
+    <comment>Toolbars map applyed successfully.</comment>
+  </data>
+  <data name="cross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cross_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cross_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Status_TCError1" xml:space="preserve">
+    <value>خطأ: لم يتمكن من الحصول على النص باستخدام المفتاح</value>
+    <comment>TC ERROR! Unable to get the resource using key</comment>
+  </data>
+  <data name="Status_FileIsDamagedOrNotTCC" xml:space="preserve">
+    <value>هذا الملف متضرر أو ليس بملف نوافذ مصغرة</value>
+    <comment>The file is damaged or not tab controls map file.</comment>
+  </data>
+  <data name="Status_LoadingTCCMap" xml:space="preserve">
+    <value>جاري تحميل ملف النوافذ المصغرة</value>
+    <comment>Loading tab controls map</comment>
+  </data>
+  <data name="Status_SavingTCCAt" xml:space="preserve">
+    <value>جاري حفظ خريطة النوافذ المصغرة</value>
+    <comment>Saving tab controls map at</comment>
+  </data>
+  <data name="Status_TCCLoadedSuccessAt" xml:space="preserve">
+    <value>تم تحميل خريطة النوافذ بنجاح من</value>
+    <comment>Tab controls loaded successfully from</comment>
+  </data>
+  <data name="Status_TCCSavedAt" xml:space="preserve">
+    <value>تم حفظ خريطة النوافذ المصغرة بنجاح في</value>
+    <comment>Tab controls map saved at</comment>
+  </data>
+  <data name="Status_UnableToLoadTCCMapFile" xml:space="preserve">
+    <value>لم يتمكن من تحميل النوافذ المصغرة</value>
+    <comment>Unable to load the tab controls map</comment>
+  </data>
+  <data name="Status_NoTCCLoadedInCore" xml:space="preserve">
+    <value>لم يتم تحميل اية خريطة للنوافذ المصغرة في القاعدة</value>
+    <comment>No tab controls map loaded in the core.</comment>
+  </data>
+  <data name="DMI_Name_Tabs" xml:space="preserve">
+    <value>النوافذ المصغرة</value>
+    <comment>Tabs</comment>
+  </data>
+  <data name="Status_GUI4" xml:space="preserve">
+    <value>تم استعادة السمة الى الافتراضية</value>
+    <comment>Theme has been set to default !!</comment>
+  </data>
+  <data name="Status_LoadingTheThemeFileAt" xml:space="preserve">
+    <value>جاري تحميل السمة الأساسية</value>
+    <comment>Loading the theme file at</comment>
+  </data>
+  <data name="Status_SavingTHMFile" xml:space="preserve">
+    <value>جاري حفظ ملف السمة</value>
+    <comment>Saving the theme file at</comment>
+  </data>
+  <data name="Status_ThemeLoadedSuccessfullyFromFile" xml:space="preserve">
+    <value>تم تحميل ملف السمة بنجاح من</value>
+    <comment>Theme file loaded successfully from file</comment>
+  </data>
+  <data name="Status_THMError1" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف السمة</value>
+    <comment>Unable to load the theme file</comment>
+  </data>
+  <data name="Status_THMError2" xml:space="preserve">
+    <value>الملف متضرر او ليس بملف سمة</value>
+    <comment>The file is damaged or not a theme file.</comment>
+  </data>
+  <data name="Status_THMError3" xml:space="preserve">
+    <value>لم يتمكن من حفظ ملف السمة</value>
+    <comment>Unable to save the theme file</comment>
+  </data>
+  <data name="Status_THMSavedSuccess" xml:space="preserve">
+    <value>تم حفظ ملف المسة بنجاح</value>
+    <comment>Theme file saved successfully at file</comment>
+  </data>
+  <data name="CMI_Name_EditTheme" xml:space="preserve">
+    <value>تحرير ال&amp;سمة</value>
+    <comment>Edit &amp;Theme</comment>
+  </data>
+  <data name="CMI_Tooltip_EditTheme" xml:space="preserve">
+    <value>حرر السمة و غير مظهر البرنامج</value>
+    <comment>Edit theme and change the way the application look like.</comment>
+  </data>
+  <data name="Message_UnableToLoadCurrentTheme" xml:space="preserve">
+    <value>لم يتمكن من تحميل ملف السمة الحالي</value>
+    <comment>Unable to load the current theme !</comment>
+  </data>
+  <data name="FilterName_ThemeFile" xml:space="preserve">
+    <value>ملف السمة</value>
+    <comment>Theme file</comment>
+  </data>
+  <data name="Title_OpenThemeFile" xml:space="preserve">
+    <value>فتح ملف السمة</value>
+    <comment>Open Theme File</comment>
+  </data>
+  <data name="Title_SaveThemeFile" xml:space="preserve">
+    <value>حفظ السمة في ملف</value>
+    <comment>Save Theme To File</comment>
+  </data>
+  <data name="Title_ThemeEditor" xml:space="preserve">
+    <value>محرر السمة</value>
+    <comment>Theme Editor</comment>
+  </data>
+  <data name="Message_UnableToSaveTheThemeFile" xml:space="preserve">
+    <value>لم يتمكن من حفظ ملف السمة</value>
+    <comment>Unable to save the theme file</comment>
+  </data>
+  <data name="CMI_Name_ShowSettings" xml:space="preserve">
+    <value>الا&amp;عدادات</value>
+    <comment>&amp;Settings</comment>
+  </data>
+  <data name="CMI_Tooltip_ShowSettings" xml:space="preserve">
+    <value>تغيير الاعدادات للبرنامج</value>
+    <comment>Edit the settings of the application.</comment>
+  </data>
+  <data name="FilterName_SettingsBackup" xml:space="preserve">
+    <value>نسخة احتياطية للاعدادات</value>
+    <comment>Settings Backup</comment>
+  </data>
+  <data name="Message_ExportSettingsRequiresSaveSettings" xml:space="preserve">
+    <value>تصدير الاعدادات يتطلب حفظ الاعدادات الحالية, هل تريد الاكمال ؟</value>
+    <comment>Exporting settings requires to save all settings first, continue ?</comment>
+  </data>
+  <data name="Message_SettingsExportedSuccessfully" xml:space="preserve">
+    <value>تم التصدير بنجاح</value>
+    <comment>Settings exported successfully.</comment>
+  </data>
+  <data name="Message_SettingsImportedSuccessfully" xml:space="preserve">
+    <value>تم االاستيراد بنجاح</value>
+    <comment>Settings imported successfully.</comment>
+  </data>
+  <data name="Message_UnableToExportTheSettings" xml:space="preserve">
+    <value>لم يتمكن من تصدير الاعدادات</value>
+    <comment>Unable to export the settings !!</comment>
+  </data>
+  <data name="Message_UnableToImportTheSettings" xml:space="preserve">
+    <value>لم يتمكن من استيراد الاعدادات</value>
+    <comment>Unable to import the settings !!</comment>
+  </data>
+  <data name="Title_ExportSettings" xml:space="preserve">
+    <value>تصدير الاعدادات</value>
+    <comment>Export Settings</comment>
+  </data>
+  <data name="Title_ImportSettings" xml:space="preserve">
+    <value>استيراد الاعدادات</value>
+    <comment>Import Settings</comment>
+  </data>
+  <data name="bullet_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icon_Wrench" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrench.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Error" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\erreur_cameleonhelp_divers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information_cameleonhelp_divers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Question" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MessageIcon_Info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3830-12566.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stop_designaxl_suite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageIcon_Warning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\danger_cameleonhelp_divers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TC_Name_Log" xml:space="preserve">
+    <value>السجل</value>
+    <comment>Log</comment>
+  </data>
+  <data name="book_open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\book_open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FilterName_TextFiles" xml:space="preserve">
+    <value>RTF وثيقة (*.rtf)|*.rtf;|ملف نصي (*.txt)|*.txt;|كل الملفات (*.*)|*.*</value>
+    <comment>RTF Document (*.rtf)|*.rtf;|Text file (*.txt)|*.txt;|All files (*.*)|*.*</comment>
+  </data>
+  <data name="Title_SaveLogIntoFile" xml:space="preserve">
+    <value>حفظ السجل في ملف</value>
+    <comment>Save log into file</comment>
+  </data>
+  <data name="Status_ExecutingCommand" xml:space="preserve">
+    <value>جاري تنفيذ الأمر</value>
+    <comment>Executing command</comment>
+  </data>
+  <data name="Status_ExecutingCommandLines" xml:space="preserve">
+    <value>جاري تنفيذ أوامر الاقلاع</value>
+    <comment>Executing command-lines</comment>
+  </data>
+  <data name="Status_ExecutingStartupCommands" xml:space="preserve">
+    <value>جاري تشغيل أوامر عند البدء</value>
+    <comment>Executing start-up commands</comment>
+  </data>
+  <data name="Status_ExecutingCloseupCommands" xml:space="preserve">
+    <value>يتم تشغيل الأوامر عند الاغلاق</value>
+    <comment>Executing close-up commands</comment>
+  </data>
+  <data name="Category_Enviroment" xml:space="preserve">
+    <value>البيئة</value>
+    <comment>Enviroment</comment>
+  </data>
+  <data name="SC_Description_Hotkeys" xml:space="preserve">
+    <value>تحرير مفاتيح الاختصارات في البرنامج</value>
+    <comment>Allows to edit hotkeys (shortcuts) for the application.</comment>
+  </data>
+  <data name="SC_Name_Hotkeys" xml:space="preserve">
+    <value>مفاتيح الاختصارات</value>
+    <comment>Hotkeys</comment>
+  </data>
+  <data name="keyboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\keyboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Message_PleaseSpecifyTheShortcutsFile" xml:space="preserve">
+    <value>الرجاء اختيار الاختصار اولا</value>
+    <comment>Please specify the shortcuts file !</comment>
+  </data>
+  <data name="application_side_tree" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_side_tree.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SC_Description_MenuItems" xml:space="preserve">
+    <value>تحرير القائمة الأساسية في البرنامج</value>
+    <comment>Allow to edit the main menu items of the application.</comment>
+  </data>
+  <data name="SC_Name_MenuItems" xml:space="preserve">
+    <value>القائمة الأساسية</value>
+    <comment>Menu Items</comment>
+  </data>
+  <data name="application_view_tile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\application_view_tile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SC_Description_Theme" xml:space="preserve">
+    <value>تحرير السمة و المظهر للبرنامج</value>
+    <comment>Allows to edit the theme of the application.</comment>
+  </data>
+  <data name="SC_Name_Theme" xml:space="preserve">
+    <value>السمة</value>
+    <comment>Theme</comment>
+  </data>
+  <data name="Message_PleaseSpecifyTheMIRFile" xml:space="preserve">
+    <value>الرجاء اختيار عنصر القائمة اولا</value>
+    <comment>Please specify the menu items file !!</comment>
+  </data>
+  <data name="Message_PleaseSpecifyTheThemeFile" xml:space="preserve">
+    <value>الرجاء اختيار ملف السمة اولا</value>
+    <comment>Please specify the theme file !!</comment>
+  </data>
+  <data name="Button_Abort" xml:space="preserve">
+    <value>&amp;خروج</value>
+    <comment>&amp;Abort</comment>
+  </data>
+  <data name="Button_Cancel" xml:space="preserve">
+    <value>إل&amp;غاء</value>
+    <comment>&amp;Cancel</comment>
+  </data>
+  <data name="Button_DontSave" xml:space="preserve">
+    <value>&amp;عدم الحفظ</value>
+    <comment>&amp;Don't save</comment>
+  </data>
+  <data name="Button_Ignore" xml:space="preserve">
+    <value>&amp;تجاهل</value>
+    <comment>&amp;Ignore</comment>
+  </data>
+  <data name="Button_NO" xml:space="preserve">
+    <value>&amp;لا</value>
+    <comment>&amp;No</comment>
+  </data>
+  <data name="Button_OK" xml:space="preserve">
+    <value>&amp;موافق</value>
+    <comment>&amp;OK</comment>
+  </data>
+  <data name="Button_Retry" xml:space="preserve">
+    <value>إ&amp;عادة المحاولة</value>
+    <comment>&amp;Retry</comment>
+  </data>
+  <data name="Button_Save" xml:space="preserve">
+    <value>&amp;حفظ</value>
+    <comment>&amp;Save</comment>
+  </data>
+  <data name="Button_Yes" xml:space="preserve">
+    <value>&amp;نعم</value>
+    <comment>&amp;Yes</comment>
+  </data>
+  <data name="Message_RestartToApply" xml:space="preserve">
+    <value>الرجاء إعادة تشغيل البرنامج للتفعيل.</value>
+    <comment>Please restart the application to apply.</comment>
+  </data>
+  <data name="CMI_Name_ShowConsole" xml:space="preserve">
+    <value>أظهر نافذة الاوامر</value>
+    <comment>أظهر نافذة الاوامر</comment>
+  </data>
+  <data name="CMI_Tooltip_ShowConsole" xml:space="preserve">
+    <value>أظهر نافذة الأوامر التي تخولك ادخال الأوامر الداخلية بشكل يدوي</value>
+    <comment>أظهر نافذة الأوامر التي تخولك ادخال الأوامر الداخلية بشكل يدوي</comment>
+  </data>
+  <data name="CMI_Name_ShowServices" xml:space="preserve">
+    <value>إظهار كافة الخدمات</value>
+    <comment>إظهار كافة الخدمات</comment>
+  </data>
+  <data name="CMI_Tooltip_ShowServices" xml:space="preserve">
+    <value>أظهر كافة الخدمات التي تعمل الان في التطبيق</value>
+    <comment>أظهر كافة الخدمات التي تعمل الان في التطبيق</comment>
+  </data>
+  <data name="CMI_Name_LoadLayout" xml:space="preserve">
+    <value>فتح ملف ترتيب النوافذ</value>
+    <comment>Load La&amp;yout</comment>
+  </data>
+  <data name="CMI_Name_SaveLayout" xml:space="preserve">
+    <value>حفظ ترتيب النوافذ باسم</value>
+    <comment>Save Layout As</comment>
+  </data>
+  <data name="CMI_Tooltip_LoadLayout" xml:space="preserve">
+    <value>فتح ملف ترتيب النوافذ من ملف</value>
+    <comment>Load controls layout from a file</comment>
+  </data>
+  <data name="CMI_Tooltip_SaveLayout" xml:space="preserve">
+    <value>حفظ ترتيب النوافذ الحالي في ملف</value>
+    <comment>Save current controls layout into a file</comment>
+  </data>
+  <data name="FilterName_ControlsLayout" xml:space="preserve">
+    <value>ملف ترتيب النوافذ</value>
+    <comment>Layout file</comment>
+  </data>
+  <data name="Title_OpenTabsControlsLayout" xml:space="preserve">
+    <value>فتح ملف ترتيب النوافذ</value>
+    <comment>Open controls layout file</comment>
+  </data>
+  <data name="Title_SaveTabsControlsLayout" xml:space="preserve">
+    <value>حفظ ترتيب النوافذ الى ملف</value>
+    <comment>Save controls layout into file</comment>
+  </data>
+  <data name="Status_ExecutingCommandCombination" xml:space="preserve">
+    <value>يتم تنفيذ مركب اوامر</value>
+    <comment>Executing command combination</comment>
+  </data>
+  <data name="Status_TheCommandCombinationCannotBeFound" xml:space="preserve">
+    <value>لا يمكن ايجاد مركب الاوامر</value>
+    <comment>The command combination cannot be found</comment>
+  </data>
+  <data name="Status_ServiceIsBlacklistedAndRemoved" xml:space="preserve">
+    <value>هذه الخدمة مسجلة في لائحة الخدمات الغير مصرح بها. تم تجاهل هذه الخدمة و لم يتم تحميلها.</value>
+    <comment>This service is blacklisted and successfully removed (not initialized).</comment>
+  </data>
+  <data name="Status_AlreadyBlacklisted" xml:space="preserve">
+    <value>مدرجة سابقا في لائحة الخدمات المعطلة</value>
+    <comment>already blacklisted.</comment>
+  </data>
+  <data name="Status_CannotBeBlacklistedDefaultService" xml:space="preserve">
+    <value>لا يمكن تعطيلها لانها معرفة على انها خدمة افتراضية</value>
+    <comment>cannot be disabled because of this service is marked as a DEFAULT service.</comment>
+  </data>
+  <data name="Status_DoesntExistCannotBeDisabled" xml:space="preserve">
+    <value>خدمة غير موجودة لذلك لا يمكن تعطيلها.</value>
+    <comment>does not exist, thus it cannot be disabled.</comment>
+  </data>
+  <data name="Status_HasBeenBlacklisted" xml:space="preserve">
+    <value>تم ادراجها في لائحة الخدمات المعطلة</value>
+    <comment>has been blacklisted (disabled) successfully.</comment>
+  </data>
+  <data name="Word_ServiceWithID" xml:space="preserve">
+    <value>خدمة مع المعرف</value>
+    <comment>Service with id</comment>
+  </data>
+  <data name="Status_IEServiceRemoved" xml:space="preserve">
+    <value>بمعنى اخر: الخدمة محذوفة</value>
+    <comment>i.e. service removed</comment>
+  </data>
+  <data name="Status_NoServiceIsListedAsBlacklisted" xml:space="preserve">
+    <value>لا يوجد خدمات معطلة</value>
+    <comment>No service is listed as blacklisted.</comment>
+  </data>
+  <data name="Status_ServiceIDInBlackListCannotBeFound" xml:space="preserve">
+    <value>خطأ: هذه الخدمة مدرجة على لائحة الخدمات المعطلة لكنها ليست محملة و او غير موجودة.</value>
+    <comment>ERROR: this service id is in blacklist but the service cannot be found</comment>
+  </data>
+  <data name="Status_AlreadyEnabled" xml:space="preserve">
+    <value>مفعلة مسبقا</value>
+    <comment>already enabled.</comment>
+  </data>
+  <data name="Status_CannotBeEnabledServiceDoesntExist" xml:space="preserve">
+    <value>لا يمكن حذف الخدمة من قائمة الخدمات المعطلة (تفعيل الخدمة), الخدمة غير موجودة</value>
+    <comment>cannot be enabled, the service does not exist.</comment>
+  </data>
+  <data name="Status_CannotBeEnabledTheServiceIsDefault" xml:space="preserve">
+    <value>لا يمكن حذف الخدمة من قائمة الخدمات المعطلة (تفعيل الخدمة), الخدمة هي خدمة افتراضية</value>
+    <comment>cannot be enabled, the service is marked as a DEFAULT service (default services cannot be disabled, did you hack blacklist ?).</comment>
+  </data>
+  <data name="Status_HasBeenRemovedFromBlacklist" xml:space="preserve">
+    <value>تم حذف الخدمة من قائمة الخدمات المعطلة (تم تفعيل الخدمة)</value>
+    <comment>has been removed from blacklist (enabled) successfully.</comment>
+  </data>
+  <data name="Status_NoServiceInBlacklist" xml:space="preserve">
+    <value>لا يوجد اي خدمة معطلة</value>
+    <comment>No service is blacklisted !!</comment>
+  </data>
+  <data name="Word_CancelIn" xml:space="preserve">
+    <value>إلغاء في</value>
+    <comment>Cancel in</comment>
+  </data>
+  <data name="Word_PressKeysFor" xml:space="preserve">
+    <value>الرجاء الضغط على ازرار الاختصار</value>
+    <comment>Press key(s) for</comment>
+  </data>
+  <data name="Word_Seconds" xml:space="preserve">
+    <value>ثانية</value>
+    <comment>second(s)</comment>
+  </data>
+  <data name="Status_ShortcutsEnabledForThisTabControl" xml:space="preserve">
+    <value>الاختصارات مفعلة لهذا التحكم</value>
+    <comment>Shortcuts enabled for this tab control !</comment>
+  </data>
+  <data name="Status_ShortcutsSuppressedForThisTabControl" xml:space="preserve">
+    <value>الاختصارات موقفة لهذا التحكم</value>
+    <comment>Shortcuts suppressed for this tab control !</comment>
+  </data>
+  <data name="Word_FileForDetails" xml:space="preserve">
+    <value>للمزيد من التفاصيل</value>
+    <comment>file for details</comment>
+  </data>
+  <data name="Word_PleaseSee" xml:space="preserve">
+    <value>الرجاء النظر في</value>
+    <comment>Please see</comment>
+  </data>
+  <data name="Status_ApplicationFoldersCheckedSuccessfully" xml:space="preserve">
+    <value>تم تفحص مجلدات البرنامج الضرورية بنجاح</value>
+    <comment>Application folders checked successfully.</comment>
+  </data>
+  <data name="Status_CheckingApplicationFolders" xml:space="preserve">
+    <value>جاري تفحص مجلدات البرنامج الضرورية</value>
+    <comment>Checking application folders ...</comment>
+  </data>
+  <data name="Error_CoreCannotInitialize" xml:space="preserve">
+    <value>لايمكن تشغيل المكتبة الاساسية</value>
+    <comment>Core cannot initialize.</comment>
+  </data>
+  <data name="Error_NotValidRequiredServicesList" xml:space="preserve">
+    <value>قائمة الخدمات المطلوبة غير صالحة. لا يمكن تشغيل البرنامج.</value>
+    <comment>The required service list is not valid in parameters, application cannot be initialized.</comment>
+  </data>
+  <data name="Error_NotValidRequiredServicesListAtLeastOneService" xml:space="preserve">
+    <value>قائمة الخدمات المطلوبة غير صالحة. على الاقل خدمة واحدة يجب ان تكون مدرجة في القائمة. لا يمكن تشغيل البرنامج.</value>
+    <comment>The required service list is empty, at least one service must be listed in order of the application to work. Application cannot be initialized.</comment>
+  </data>
+  <data name="Error_NotValidRequiredServicesListAtMissingService" xml:space="preserve">
+    <value>قائمة الخدمات المطلوبة غير صالحة. هناك خدمة مهمة مفقودة. لا يمكن تشغيل البرنامج.</value>
+    <comment>There is a missing required service in the application. Application cannot be initialized.</comment>
+  </data>
+  <data name="MessageCaption_CoreInitialize" xml:space="preserve">
+    <value>تشغيل المكتبة الاساسية</value>
+    <comment>Core Initialize</comment>
+  </data>
+  <data name="Word_MissingServiceID" xml:space="preserve">
+    <value>معرف الخدمة المفقودة</value>
+    <comment>Missing service id</comment>
+  </data>
+  <data name="DMI_Name_Layouts" xml:space="preserve">
+    <value>وا&amp;جهات</value>
+    <comment>Layouts</comment>
+  </data>
+  <data name="DMI_Name_Themes" xml:space="preserve">
+    <value>&amp;سمات</value>
+    <comment>&amp;Themes</comment>
+  </data>
+  <data name="CMI_Name_LoadTheme" xml:space="preserve">
+    <value>فتح سمة</value>
+    <comment>Load Theme</comment>
+  </data>
+  <data name="DMI_Name_Shortcuts" xml:space="preserve">
+    <value>خرائط اختصارات</value>
+    <comment>S&amp;hortcut Maps</comment>
+  </data>
+</root>

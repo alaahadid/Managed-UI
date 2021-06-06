@@ -1,0 +1,204 @@
+﻿List of commands and their parameters in the ManagedUI library.
+Commands are listed in format "command name [command id]"
+----------------------------------------------------------
+
+GENERAL COMMANDS:
+----------------
+
+. Exit [exit]
+ 
+  Exit the application.
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Set Language [set.language]
+ 
+  Set the current language of the application.
+
+  - Parameters: 
+  > string langID: the language id to set into.
+
+  - Returns: N/A (returns empty object array).
+
+  
+. Show Commands [help.commands]
+ 
+  List available commands that detected and loaded in the commands manager service.
+  The commands will be listed in console (require console or to handle Status writes).
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+. Show Console [console.show]
+ 
+  Show built-in console. This console can be used to enter commands as well.
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Show Help [help.show]
+ 
+  Show help document to end-user.
+
+  - Parameters:
+  > bool useCHM (optional, set by default): indicates if the file is .chm (true = chm) 
+    otherwise will use normal html (index file)
+
+  - Returns: N/A (returns empty object array).
+
+
+. Show Services [services.show]
+ 
+    Show available services that detected and loaded in the MUI core.
+    This command will show a dialog (i.e. GUI) for services (list services, can enable/disable services ..etc).
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+SERVICES COMMANDS:
+------------------
+
+. Blacklist Service [service.blacklist]
+ 
+  This command blacklist a service (i.e. disable a service and all related components (i.e. commands) of being used)
+
+  - Parameters: 
+  > string serviceID: the service id to blacklist (can be send multiple times to disable more than one service in a time)
+
+  - Returns: N/A (returns empty object array).
+
+  
+. Blacklist Service List [service.blacklist.list]
+ 
+  List blacklisted services list.
+  The commands will be listed in console (require console or to handle Status writes).
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Remove Blacklist Service [service.blacklist.remove]
+ 
+  This command remove blacklist for a service (i.e. enable a service and all related components (i.e. commands))
+
+  - Parameters: 
+  > string serviceID: the service id to remove blacklist (can be send multiple times to enable more than one service in a time)
+
+  - Returns: N/A (returns empty object array).
+
+
+. List Services [service.list]
+ 
+    List available services that detected and loaded in the MUI core.
+    The services will be listed in console (require console or to handle Status writes).
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+SETTINGS COMMANDS:
+------------------
+
+. Show Settings [show.settings]
+ 
+  Show the settings window (dialog)
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+TAB CONTROLS COMMANDS:
+----------------------
+
+. Open a layout and make it current [tabcontrol.load.layout]
+ 
+  Open a layout file (tab controls map) and make it current (load it in the main form).
+
+  - Parameters: 
+  > string mapFilePath (optional): the layout (tab controls map) file path. 
+    If this parameter is not used, an open file dialog will be opened allows to chose a file
+    to open.
+
+  - Returns: 
+  > bool success: true: layout file open and current set success, false: layout file open failed (nothing changed).
+
+
+. Save current layout into a file [tabcontrol.save.layout]
+ 
+  Save current layout (loaded in the main form) into a file (tab controls map).
+  This will open save dialog to allow user to chose where to save the file.
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Toggle Tab Control Visible [tabcontrol.set.visible]
+ 
+  Toggle tab control visibility in the current tab controls map (loaded in the main form).
+
+  - Parameters: 
+  > string tabControlID: the control id to toggle visibility for.
+
+  - Returns: N/A (returns empty object array).
+
+
+TBR AND MIR COMMANDS:
+--------------------
+
+. Set TBR Visible [set.tbr.visible]
+ 
+  Set toolbar representer visibility.
+
+  - Parameters: 
+  > string TBRName: the name of the tbr to set visibility for.
+  > bool visible: true: the toolbar is visible, false: the toolbar is not visible.
+
+  - Returns: N/A (returns empty object array).
+
+
+. Show Menu Items Editor [edit.mir.map]
+ 
+  Shows main menu items editor (can be used to edit menu items maps as well)
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Show Shortcuts Editor [edit.shortcuts.map]
+ 
+  Shows shortcuts editor (can be used to edit shortcut maps as well)
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+
+
+. Show Theme Editor [edit.theme]
+ 
+  Shows theme editor (can be used to edit theme maps as well)
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
+  
+
+. Show Toolbars Editor [edit.tbr.map]
+ 
+  Shows toolbars editor (can be used to edit toolbars maps as well)
+
+  - Parameters: N/A (can be null).
+
+  - Returns: N/A (returns empty object array).
