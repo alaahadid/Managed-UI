@@ -19,17 +19,6 @@ An advanced managed enviroment for C# desktop applications.
 ## Introduction
 ManagedUI (Managed User Interface) is a .net framework library written in C#, can be considered as a getting-started library for creating a very advanced C# desktop applications.
 
-If a project needed to be like this:
-
-- Editible and dynamic menu items and toolbars. Can give end-user options to edit main menu, toolbars, theme and shortcuts (hotkeys)
-- Editible and dynamic tabs (control windows in the main window). Also you can give the end-user option to edit the tabs layout easily.
-- Dynamic built-in settings engine. Allows end-user to manage your application easy, easy to create setting pages as well.
-- Add-ons support, the project uses MEF (see here), use services instead of just add-reference style.
-- Uses commands and command combinations instead of just calling methods and creating instances.
-- Multilingual interface support built in. You can make your project multilingual or simply single language.
-- An engine that can be used more than once to create more applications.
-- Easy to deal with and coding.
-
 You can consider ManagedUI as a .net framework desktop applications engine, you just add the library in your project, implement few stuff and your project is ready to go in minutes !!
 
 Yes, in minutes, no kidding, you don't have to deal with windows forms designers anymore (you just use it when designing controls). 
@@ -46,28 +35,34 @@ Also, check out the Demo project which include the basic code you need for your 
 
 
 ## System Requirements: 
-- Windows (R) XP SP3, Vista, 8, 8.1, 10; X86 or X64. (Supports all Windows versions that support .net framework 4) 
-- .Net Framework 4 installed on target pc. 
+- Work with Windows (R) XP SP3, Vista. 7, 8, 8.1 and 10. X86 or X64. (Work on all Windows releases that support .net framework 4) 
+- .Net Framework 4 or later installed in target pc (also another .net framework can be used depending on library build, since developer can use source code of ManagedUI and configure version of .net framework, it must be >= 4 for MEF support.)
 
-### As developer, you need a good knowledge of: 
+For developers, you'll need Visual Studio IDE installed, VS Community was used for building this project.
+
+### Also, you need a good knowledge of:
+
 - Managed Extensibility Framework (MEF), read more here: <https://msdn.microsoft.com/en-us/library/dd460648(v=vs.110).aspx> 
-- Localizing Windows Forms, read more here: <https://msdn.microsoft.com/en-us/library/y99d1cd3(v=vs.71).aspx> 
+- Localizing Windows Forms, read more here: <https://docs.microsoft.com/en-us/dotnet/framework/resources/> , what is needed with ManagedUI is to know-how to add and edit resource files to add resources such as images and texts, see [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/en-us/previous-versions//y99d1cd3(v=vs.85)?redirectedfrom=MSDN).
 
 #### Note:
 
 ManagedUI uses SlimDX from NuGet, it should be installed by default when using VisualStudio with NuGet Manager.
+
 If Not, simply download SlimDX (included in the binary releases of ManagedUI) and add it as reference to ManagedUI.
 
 ## Features
 
-- Editable and dynamic menu items and toolbars. Can give end-user options to edit main menu, toolbars, theme and shortcuts (hotkeys)
-- Editable and dynamic tabs (control windows in the main window). Also you can give the end-user option to edit the tabs layout easily.
-- Dynamic built-in settings engine. Allows end-user to manage your application easy, easy to create setting pages as well.
-- Add-ons support, the project uses MEF (Managed Extensibility Framework), use services instead of just add-reference style.
-- Uses commands and command combinations instead of just calling methods and creating instances.
-- Multilingual interface support built in. You can make your project multilingual or simply single language.
-- An engine that can be used more than once to create more applications.
-- Easy to deal with and coding.
+A project that use ManagedUI can have:
+
+- Editable and dynamic menu items and toolbars. Can give end-user options to edit main menu, toolbars, theme and shortcuts (hotkeys) 
+- Editable and dynamic tabs (control windows in the main window). Also you can give the end-user option to edit the tabs layout easily. 
+- Dynamic built-in settings engine. Allows end-user to manage your application easy, easy to create setting pages as well. 
+- Add-ons support, the project uses MEF (see here), use services instead of just add-reference style. 
+- Uses commands and command combinations instead of just calling methods and creating instances. 
+- Multilingual interface support built in. You can make your project multilingual or simply single language. 
+- Can be considered as an engine that can be used to create .net applications, and these applications may share same components.
+- Easy to deal with and coding. 
 
 ## Installation  
 
@@ -85,7 +80,7 @@ Or you can use the source code of MUI instead, it is better to use the source co
 
 Notes:
 
-- ManagedUI full source include demo project and tutorial project, explains every thing needed to build a complete project using MUI.
+- ManagedUI full source include demo project and tutorial project, explains every thing needed to build a complete project using MUI. It is recommended to take a look at [Getting Started (Tutorials)](https://github.com/alaahadid/Managed-UI/wiki/Getting-Started-(Tutorials)) first.
 - When MUI starts, it create a settings folder for the project at the documents. This folder will be named as same as the ProjectTitle you give in the parameters of MUI. 
 
   For example: parameters.ProjectTitle = "My Project";
@@ -105,8 +100,7 @@ Notes:
   
 ### For users
 
-Once ManagedUI is used for your app, all you need to do is to include ManagedUI in your app dirctory. ManagedUI requires native installation
-of .Net framework 4 (beside your app requirements of course) thus nothing more need for installation and using of MUI.
+Once ManagedUI is used for your app, all you need to do is to include ManagedUI in your app dirctory. ManagedUI requires native installation of .Net framework 4 (beside your app requirements of course) thus nothing more need for installation and using of MUI.
 
 In Release Folder:
 
@@ -114,8 +108,8 @@ In Release Folder:
   This dll is built with .net 4 framework and X86 cpus. (YOU ONLY NEED THESE 2 DLLS FOR YOUR APPLICATION).
 - "ManagedUI Demo" include a demo project built with ManagedUI. Just to take a look at MUI and what can be done with it.
 - "ManagedUI Tutorial Project" include a complete working project built with ManagedUI.
+- "Timer Counter Lister" A program that list and manage timers, is a complete working project uses ManagedUI, see <https://github.com/alaahadid/Timer-Counter-Lister>.
 
 Notes:
-- ManagedUIUtilities.exe can be used to edit default menu, toolbars, shortcuts and theme. This tool is usefull when you
-  finished with your application and want to edit the default configuration of your application.
+- ManagedUIUtilities.exe can be used to edit default menu, toolbars, shortcuts and theme. This tool is usefull when you finished with your application and want to edit the default configuration of your application.
 - For developers, it is recommended to use source code instead. See above.
