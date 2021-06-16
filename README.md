@@ -2,7 +2,7 @@
 An advanced managed enviroment for C# desktop applications. 
 
 ### [DOWNLOAD LATEST RELEASE (VERSION)](https://github.com/alaahadid/Managed-UI/releases)
-### [GETTING STARTED ? CLICK HERE](https://github.com/alaahadid/Managed-UI/wiki/Workflow-(Understanding-ManagedUI,-What-Is-...-%3F))
+### [GETTING STARTED ? (TUTORIALS)](https://github.com/alaahadid/Managed-UI/wiki/Getting-Started-(Tutorials))
 
 ![Snapshot 1](/screenshots/snap1.JPG?raw=true "Snapshot1")
 ![Snapshot 2](/screenshots/snap2.JPG?raw=true "Snapshot2")
