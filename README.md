@@ -3,7 +3,6 @@ An advanced managed enviroment for C# desktop applications.
 
 ### [DOWNLOAD LATEST RELEASE (VERSION)](https://github.com/alaahadid/Managed-UI/releases)
 ### [GETTING STARTED ? CLICK HERE](https://github.com/alaahadid/Managed-UI/wiki/Workflow-(Understanding-ManagedUI,-What-Is-...-%3F))
-### [Donate](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=alahadid@gmail.com&item_name=Donation&currency_code=USD&bn=PP-DonationsBF)
 
 ![Snapshot 1](/screenshots/snap1.JPG?raw=true "Snapshot1")
 ![Snapshot 2](/screenshots/snap2.JPG?raw=true "Snapshot2")
@@ -120,6 +119,3 @@ Notes:
 - ManagedUIUtilities.exe can be used to edit default menu, toolbars, shortcuts and theme. This tool is usefull when you
   finished with your application and want to edit the default configuration of your application.
 - For developers, it is recommended to use source code instead. See above.
-
-## Finally 
-Thank you very much for using my library. I hope this one is a good use for you :) 
